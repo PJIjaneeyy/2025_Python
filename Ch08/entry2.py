@@ -15,9 +15,10 @@ entry_name=Entry(root)
 entry_name.pack()
 
 Label(root, text="나이:").pack()
-entry_age = Entry(root)
 
+entry_age = Entry(root)
 entry_age.pack()
+
 button_submit = Button(root,text="제출", command=submit)
 button_submit.pack()
 
