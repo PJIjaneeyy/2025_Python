@@ -7,10 +7,12 @@ class BankAccount(object):
         self.balance = balance #인스턴스 변수
 
     def deposit(self, amount): #입금
+        # 2. 잔고를 증가시키는 메서드
         self.balance += amount
         print("입금 성공")
         
     def withdraw(self, amount): #출금
+        # 3. 잔고를 감소시키는 메서드 (잔액 부족 처리)
         if self.balance >= amount :
             self.balance -= amount
             print("인출 성공")

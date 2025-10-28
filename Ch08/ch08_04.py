@@ -20,7 +20,6 @@ def update_text_color(canvas, text_id):
     canvas.itemconfigure(text_id, fill=new_color)
 
 
-
 #애플리케이션 초기 설정
 root = tk.Tk()
 root.title("Text Animation")

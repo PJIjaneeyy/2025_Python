@@ -7,7 +7,7 @@ def get_entry_value():
 root = Tk()
 root.geometry("300x200")
 
-entry=Entry(root)
+entry=Entry(root) #entry = 입력창
 entry.pack()
 
 button=Button(root,text="확인",command=get_entry_value)

@@ -1,15 +1,17 @@
 class Student:
     def __init__(self,name):
+        # 1. 이름 초기화 및 성적 리스트 초기화
         self.name=name
-        self.score=[] #빈리스트
+        self.score=[] #빈리스트. 성적을 저장할 리스트
 
     def add_score(self,score): #리스트에 성적을 추가하는 메소드
         self.score.append(score)
         print(f"{self.name}의 성적 {score}점이 추가되었습니다.")
 
     def cal_avg(self):
+        # 3. 성적의 평균을 계산하여 반환
         if not self.score:
-            return 0
+            return 0 # 성적이 없으면 0 반환
         return sum(self.score)/len(self.score) #평균 연산
     
     #학생 인스턴스 생성

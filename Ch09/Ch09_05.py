@@ -1,12 +1,15 @@
 class Employee:
+    # 1. 클래스 변수: 전체 직원 수 저장 (모든 객체가 공유)
     empCount=0 #클래스 변수 (새로운 객체가 생설될 때 마다 클래스 변수의 값이 바뀌어야함.)
 
     def __init__(self, name, salary):
+        # 2. 인스턴스 변수 초기화
         self.name=name
         self.salary=salary
+        # 클래스 변수 업데이트
+        Employee.empCount += 1 # 클래스 변수 값 변경( 직원 수 증가)
 
-        Employee.empCount += 1 # 클래스 변수 값 변경
-
+    # 3. 직원 정보 출력 메서드
     def displayEmp(self):
         print(f"Name:{self.name}, Salary:{self.salary}")
 

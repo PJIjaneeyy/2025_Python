@@ -1,5 +1,5 @@
 class Movie:
-    def __init__(self, title, genre, ratings):
+    def __init__(self, title, genre):
         self.title=title
         self.genre=genre
         self.ratings=[]
